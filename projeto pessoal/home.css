@@ -98,7 +98,7 @@ body {
 .imagem2 {
     display: flex;
     flex-direction: row;
-    width: 830px;
+    width: 800px;
     height: 300px;
     background: url("https://files.tecnoblog.net/wp-content/uploads/2019/07/Counter-Strike-1.6.jpg");
     background-position: center;
@@ -127,5 +127,6 @@ ul a {
 .cor {
     color: white;
     text-decoration: none;
-    margin-left: 54px;
+    margin-left: 57px;
 }
+
