@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+-------------------------
+.header { 
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar{
+    margin-left: 22px;
+    margin: 0px;
+    height: 10vh;
+    width: 97vw;
+    /* padding: 1%; */
+    padding-right: 61px;
+    position: fixed;
+    top: 0%;
+    text-align:right ;
+    transition: 0.5s;
+    background-color: rgb(241, 190, 95);
+
+}
+
+.navbar ul li{
+    margin-left: 25px;
+    display: inline-block;
+    padding: 1% 10px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 33px;
+    
+}
+.conteiner {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.logo {
+    height: 800px;
+    background-image: url("https://midias.jb.com.br/_midias/jpg/2021/03/11/csgo-586394.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+    
+
+}
+.logo p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    /* width: 1200px; */
+    padding: 12px;
+   margin: auto;
+    margin-left: 100px;
+    
+    
+
+    
+
+}
+
+.logo .inicio {
+   
+    margin-bottom: 500px;
+    padding: 20px;
+    font-size: 36px;
+    margin-top: 100px;
+    width: 50vw;
+    height: 10vh;
+    margin-left: 100px;
+    margin-right: 80px;
+    margin-bottom: 600px;
+    transition: all 0.8s;
+    
+}
+ul a {
+    text-decoration: none;
+   
+    color: rgb(0, 0, 0);
+}
+.logo2 {
+    height: 300px;
+    background-image: url("https://files.tecnoblog.net/wp-content/uploads/2019/07/Counter-Strike-1.6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+
+    
+}
+.logo3 {
+    height: 800px;
+    background-image: url("http://noticias.maisesports.com.br/wp-content/uploads/2021/07/Baixar-CSGO-download.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+
+.logo .logo2 {
+   
+    /* margin-bottom: 500px; */
+    padding: 10px;
+    font-size: 36px;
+    margin-top: 100px;
+    /* width: 50vw; */
+    /* height: 10vh; */
+    margin-left: 100px;
+    /* margin-right: 200px; */
+    margin-bottom: 400px;
+    transition: all 0.8s;
+    justify-content: center;
+    
+}
+
+.logo .logo3 {
+   
+    /* margin-bottom: 500px; */
+    padding: 10px;
+    font-size: 36px;
+    margin-top: 10px;
+    /* width: 50vw; */
+    /* height: 10vh; */
+    margin-left: 100px;
+    /* margin-right: 200px; */
+    margin-bottom: 400px;
+    transition: all 0.8s;
+    justify-content: center;
+    
+}
