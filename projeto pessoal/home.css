@@ -12,7 +12,7 @@ body {
     background: rgb(236, 173, 56);
     display: flex;
     flex-direction: row;
-    width: 1349px;
+    width: 1600px;
 }
 
 .navbar__links {
@@ -43,8 +43,8 @@ body {
 }
 
 .logo {
-    height: 800px;
-    background-image: url("https://midias.jb.com.br/_midias/jpg/2021/03/11/csgo-586394.jpg");
+    height: 850px;
+    background-image: url("https://dmarket.com/blog/best-csgo-wallpapers/CS-GO-wallpaper-HD-art_hue3ed7aeab8fceb3ccf3a35de14fc82fb_1114369_1920x1080_resize_q75_lanczos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -100,7 +100,7 @@ body {
     flex-direction: row;
     width: 800px;
     height: 300px;
-    background: url("https://files.tecnoblog.net/wp-content/uploads/2019/07/Counter-Strike-1.6.jpg");
+    background: url("http://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,4 +129,29 @@ ul a {
     text-decoration: none;
     margin-left: 64px;
 }
+
+.rodape{
+    height: 10px;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.foto img{
+    margin-top: 20px;
+    height: 150px;
+    display: flex;
+  }
+
+  .escrita p{
+      color: white;
+      margin-left: 400px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+      
+  }
+
+  
+
+
 
