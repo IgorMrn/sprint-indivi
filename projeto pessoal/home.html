@@ -7,47 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
+
 </head>
 
 <body>
     <header>
+
+        </div>
         <div class="navbar">
+            <div class="mobilenavbar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <li class="logo-site">Cs History</li>
 
             <ul class="navbar__links">
-                <li><a href="login.css">Login</a></li>
-                <li>|</li>
+
+                <li><a href="login.html">Login</a></li>
+
                 <li><a href="cadastro.html">Cadastro</a></li>
-    
+
             </ul>
-        </div>
+
     </header>
+
+
+
     <main>
         <div class="logo">
             <div class="conteiner__texto">
-                    <p class="texto__home">Bem vindo ao Cs History!</p>
+                <p class="texto__home">Bem vindo ao Cs History!</p>
             </div>
-    
+
             <div class="container__pai">
-                    <div class="imagem1">
-                        <p class="logo2">
-                           <a href="" class="cor">Saiba mais sobre o CS 1.6</a> 
-                        </p>
-                    </div>
-                    <div class="imagem2">
-                            <p class="logo3">
-                                <a href="" class="cor">Saiba mais sobre o CSGO</a> 
-                            </p>
-                    </div>
-    
+                <div class="imagem1">
+                    <p class="logo2">
+                        <a href="cs1.6.html" class="cor">Saiba mais sobre o CS 1.6</a>
+                    </p>
+                </div>
+                <div class="imagem2">
+                    <p class="logo3">
+                        <a href="" class="cor">Saiba mais sobre o CSGO</a>
+                    </p>
+                </div>
+                <script src="mobile-navbar.js"></script>
     </main>
-    
-    <footer class="rodape">  
+
+    <footer class="rodape">
         <div class="foto">
             <div class="escrita">
-        <img src="https://lasclasesdetic1819bg14.files.wordpress.com/2019/01/iu-7.jpeg">
-        <p>Cs History</p>
-    </div>
-</div>
+                <picture>
+                    <source media="(max-width: 800px )" srcset="iu-7.jpeg">
+                    <p>Cs History</p>
+                    <img src="iu-7.jpeg">
+                </picture>
+
+            </div>
+        </div>
     </footer>
 </body>
 
