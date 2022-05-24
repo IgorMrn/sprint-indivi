@@ -1,6 +1,177 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Century Gothic;
+    background-color: rgb(0, 0, 0);
+}
+.header {
     background-color: rgb(0, 0, 0);
 }
 
+.navbar {
+    background: rgb(236, 173, 56);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1600px;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1348px;
+    /* justify-content: end;
+    align-items: end; */
+    list-style: none;
+}
+
+.navbar__links li {
+    margin-left: 3;
+    margin-right: 3%;
+    
+    
+
+
+}
+
+.navbar__links a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+.conteiner {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.container__pai {
+    display: flex;
+    flex-direction: row;
+    width: 615px;
+    height: 350px;
+    min-width: 280px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.logo{
+    height: 850px;
+    background-image: url("https://files.tecnoblog.net/wp-content/uploads/2019/07/Counter-Strike-1.6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 50%; */
+    margin: auto;
+    min-width: 320px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+
+.logo-site {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 140px;
+    margin-top: 11px;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+
+}
+
+.container__texto {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto__home {
+    color: white;
+    font-size: 45px;
+    margin-left: 30.55%;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.container__pai {
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: 300px;
+}
+.mobilenavbar {
+    display: none;
+    cursor: pointer;
+}
+
+.mobilenavbar div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    margin-right: 500px;
+    transition: 0.3s;
+
+}
+
+
+@media(max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar__links {
+
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+}
+
+.navbar__links li {
+    margin-left: 0;
+    opacity: 0;
+}
+
+.mobilenavbar {
+    display: block;
+}
+
+.navbar__links.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobilenavbar.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobilenavbar.active .line2 {
+    opacity: 0;
+}
+
+.mobilenavbar.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
