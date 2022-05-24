@@ -3,12 +3,28 @@ body {
     font-family: Century Gothic;
     background-color: rgb(0, 0, 0);
 }
+ 
+header{
+    height: 850px;
+    background-image: url("https://wallpaperaccess.com/full/4918071.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 50%; */
+    margin: auto;
+    min-width: 320px;
+    max-width: 1920px;
+    width: 100%;
+
+}
+
 .header {
     background-color: rgb(0, 0, 0);
 }
 
 .navbar {
-    background: rgb(236, 173, 56);
+    
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -28,6 +44,10 @@ body {
 .navbar__links li {
     margin-left: 3;
     margin-right: 3%;
+    font-size: 19px;
+    margin-top: 6px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     
     
 
@@ -35,9 +55,10 @@ body {
 }
 
 .navbar__links a{
-    color: black;
+    color: rgb(255, 255, 255);
     list-style: none;
     text-decoration: none;
+    font-size: 19px;
 }
 .conteiner {
     color: rgb(0, 0, 0);
@@ -56,19 +77,6 @@ body {
     width: 100%;
 }
 
-.logo{
-    height: 850px;
-    background-image: url("https://files.tecnoblog.net/wp-content/uploads/2019/07/Counter-Strike-1.6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    /* opacity: 50%; */
-    margin: auto;
-    min-width: 320px;
-    max-width: 1280px;
-    width: 100%;
-}
 
 
 .logo-site {
@@ -76,10 +84,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-left: 140px;
-    margin-top: 11px;
+    margin-top: 7px;
     width: 25%;
     list-style: none;
     text-align: center;
+    color: white;
 
 }
 
@@ -101,6 +110,20 @@ body {
     flex-direction: row;
     width: 1300px;
     height: 300px;
+}
+.barra {
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+a:hover .barra {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
 }
 .mobilenavbar {
     display: none;
