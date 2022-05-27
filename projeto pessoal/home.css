@@ -177,16 +177,21 @@ ul a {
 }
 
 .rodape {
-    height: 10px;
-    justify-content: space-between;
+    height: 150px;
+    justify-content: space-evenly;
     font-size: 18px;
-    align-items: center;
 }
 
-.foto img {
+.fotosrodape {
     margin-top: 20px;
-    height: 150px;
     display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.escritarodape h5 img {
+    margin-top: 5px;
 }
 
 .escrita p {
@@ -195,6 +200,7 @@ ul a {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    margin-right: 350px;
 
 
 }
