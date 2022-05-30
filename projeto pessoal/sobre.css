@@ -8,8 +8,7 @@ body {
 }
 
 .navbar {
-    background: rgb(236, 173, 56);
-    display: flex;
+  display: flex;
     flex-direction: row;
     width: 100%;
     min-width: 320px;
@@ -26,10 +25,13 @@ body {
 }
 
 .navbar__links li {
-    margin-left: 3;
-    margin-right: 3%;
-    font-size: 19px;
-    margin-top: 6px;
+  margin-left: 3;
+  margin-right: 3%;
+  font-size: 19px;
+  margin-top: 6px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
     
     
 
@@ -37,7 +39,7 @@ body {
 }
 
 .navbar__links a{
-    color: black;
+    color: rgb(255, 255, 255);
     list-style: none;
     text-decoration: none;
     font-size: 19px;

@@ -5,8 +5,25 @@
 
 }
 
-body{
-    background-color: rgb(126, 125, 125);
+body {
+    margin: 0;
+    font-family: Century Gothic;
+  
+}
+header{
+    height: 850px;
+    background-image: url("https://wallpaperaccess.com/full/4918071.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 50%; */
+    margin: auto;
+    min-width: 320px;
+    max-width: 1920px;
+    width: 100%;
+     
+
 }
 
 .conteneier{
@@ -17,6 +34,96 @@ body{
     align-items: center;
     margin: 0 auto;
 }
+.navbar {
+    display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-width: 320px;
+      max-width: 1600px;
+  }
+  
+  .navbar__links {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 1348px;
+      /* justify-content: end;
+      align-items: end; */
+      list-style: none;
+  }
+  
+  .navbar__links li {
+    margin-left: 3;
+    margin-right: 3%;
+    font-size: 19px;
+    margin-top: 6px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+      
+      
+  
+  
+  }
+  
+  .navbar__links a{
+      color: rgb(255, 255, 255);
+      list-style: none;
+      text-decoration: none;
+      font-size: 19px;
+  }
+  .conteiner {
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: space-between;
+      margin-left: 70px;
+  }
+  
+  .container__pai {
+      display: flex;
+      flex-direction: row;
+      width: 615px;
+      height: 350px;
+      min-width: 280px;
+      max-width: 1920px;
+      width: 100%;
+  }
+  
+  .logo-site  {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-left: 650px;
+      /* margin-right: 700px; */
+      margin-top: 7px;
+      width: 25%;
+      list-style: none;
+      text-align: center;
+      color: white;
+  
+  }
+  .barra {
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+a:hover .barra {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+.conteiner {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    
+    text-decoration: none;
+}
+
 
 .border{
     height: 369px;
@@ -25,17 +132,21 @@ body{
     border-radius: 10px;
     transition: border 1s;
     position: relative;
+    
+    text-decoration: none;
 }
 
 .border:hover{
     border: 1px solid white;
+    
+    text-decoration: none;
 }
 
 .card{
     height: 379px;
     width: 300px;
     background: grey;
-    border-radius: 10px;
+    border-radius: 13px;
     transition: background 0.8s;
     overflow:  hidden;
     background: black;
@@ -45,8 +156,119 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
+    
+    text-decoration: none;
 }
 
 .card0{
-    background: url();
+    background: url(2.webp) center center no-repeat;
+    background-size: 400px;
+   
+    text-decoration: none;
+
+}
+
+.card0:hover{
+    background: url(2.webp) center center no-repeat;
+    background-size: 600px;
+   
+    text-decoration: none;
+
+}
+
+
+.card0:hover h2{
+    opacity: 1;
+    
+    text-decoration: none;
+
+
+}
+
+.card0:hover .c{
+    opacity: 1;
+   
+    text-decoration: none;
+}
+h2{
+    color: white;
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.c{
+    opacity: 0;
+    transition: opacity 1s;
+    color: white;
+ align-items: center;
+
+ text-decoration: none;
+
+}
+
+
+.texto{
+    position: absolute;
+    margin-left: 10px;
+    color: white;
+    height: 130px;
+    top: 226px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    text-decoration: none;
+
+}
+.card1{
+    background: url(mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 500px;
+
+}
+
+.card1:hover{
+    background: url(mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 900px;
+
+}
+
+
+.card1:hover h2{
+    opacity: 1;
+
+
+}
+
+.card1:hover .c{
+    opacity: 1;
+}
+
+
+.card2{
+    background: url(mibr-capa.jpg) center center no-repeat;
+    background-size: 400px;
+
+}
+
+.card2:hover{
+    background: url(mibr-capa.jpg) center center no-repeat;
+    background-size: 600px;
+
+}
+
+
+.card2:hover h2{
+    opacity: 1;
+
+
+}
+
+.card2:hover .c{
+    opacity: 1;
+    
 }
