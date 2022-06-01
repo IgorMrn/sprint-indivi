@@ -1,8 +1,28 @@
 body{
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    margin: 0;
+    font-family: Century Gothic;
+ 
 }
+.preto{
+    background-color: rgba(0, 0, 0, 0.226);
+}
+.header{
+    height: 850px;
+    background-image: url(https://thumbs.gfycat.com/BoringSpotlessCaudata-size_restricted.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 50%; */
+    margin: auto;
+    min-width: 320px;
+    max-width: 1920px;
+    width: 100%;
+     
+
+}
+
+
 .area-cadastro{
     display: flex;
     height: 100vh;
@@ -13,12 +33,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 355px;
     height: 450px;
     padding: 35px;
     border-radius: 10px;
-
+    
 }
 
 .quadrado form{
@@ -56,4 +76,8 @@ input[type="submit"]{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.p{
+    font-family: Century Gothic;
 }
