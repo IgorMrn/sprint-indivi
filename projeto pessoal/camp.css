@@ -64,6 +64,7 @@ body {
 
 
 .container__pai {
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -78,35 +79,50 @@ body {
 .texto__home {
     color: white;
     font-size: 25px;
-    margin-left: 36%;
+    margin-left: 31%;
     width: 400px;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    
 }
 
 .info_text{
-    
-        color: #ffffff;
+
+        color: #000000;
         margin-bottom: 130vh;
-        display: flex;
+        text-align: center;
+        width: 100%;
+        /* display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: row; */
         margin-right: 240px;
-      
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 5px;
     
 
 }
 
+.info_text p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
 
+.container-artigo {
+    width: 90%;
+    max-width: 620px;
+    margin-left: 37px;
+}
 
 .imagem1  img{
     display: flex;
-    width: 650px;
-    height: 300px;
+    width: 620px;
+    height: 270px;
     min-width: 280px;
     max-width: 1920px;
-    margin-bottom: 15px; 
+    /* margin-bottom: 15px;  */
 
 }
 

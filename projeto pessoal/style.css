@@ -28,11 +28,15 @@ header{
 
 .conteneier{
     height: 100vh;
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
 }
 .navbar {
     display: flex;
@@ -120,8 +124,11 @@ a:hover .barra {
     display: flex;
     justify-content: space-between;
     margin-left: 70px;
-    
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
 }
 
 
@@ -161,7 +168,7 @@ a:hover .barra {
 }
 
 .card0{
-    background: url(2.webp) center center no-repeat;
+    background: url(..//img/2.webp) center center no-repeat;
     background-size: 400px;
    
     text-decoration: none;
@@ -169,7 +176,7 @@ a:hover .barra {
 }
 
 .card0:hover{
-    background: url(2.webp) center center no-repeat;
+    background: url(..//img/2.webp) center center no-repeat;
     background-size: 600px;
    
     text-decoration: none;
@@ -226,14 +233,14 @@ h2{
 
 }
 .card1{
-    background: url(mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
     background-size: 500px;
 
 }
 
 .card1:hover{
-    background: url(mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
-    background-size: 900px;
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 800px;
 
 }
 
@@ -250,13 +257,13 @@ h2{
 
 
 .card2{
-    background: url(mibr-capa.jpg) center center no-repeat;
+    background: url(..//img/mibr-capa.jpg) center center no-repeat;
     background-size: 400px;
 
 }
 
 .card2:hover{
-    background: url(mibr-capa.jpg) center center no-repeat;
+    background: url(..//img/mibr-capa.jpg) center center no-repeat;
     background-size: 600px;
 
 }
@@ -271,4 +278,77 @@ h2{
 .card2:hover .c{
     opacity: 1;
     
+}
+
+.img2 img {
+    width: 400px;
+}
+
+.card3{
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 500px;
+
+}
+
+.card3:hover{
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 800px;
+
+}
+
+
+.card3:hover h2{
+    opacity: 1;
+
+
+}
+
+.card3:hover .c{
+    opacity: 1;
+}
+
+.card4{
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 500px;
+
+}
+
+.card4:hover{
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 800px;
+
+}
+
+
+.card4:hover h2{
+    opacity: 1;
+
+
+}
+
+.card4:hover .c{
+    opacity: 1;
+}
+
+.card5{
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 500px;
+
+}
+
+.card5:hover{
+    background: url(..//mossawi_233951341826_20160605194555_466630813200.png) center center no-repeat;
+    background-size: 800px;
+
+}
+
+
+.card5:hover h2{
+    opacity: 1;
+
+
+}
+
+.card5:hover .c{
+    opacity: 1;
 }
