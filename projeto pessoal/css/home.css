@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: Century Gothic;
+    background-color: rgb(0, 0, 0);
+}
+
+------------------------- .header {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    background: rgb(236, 173, 56);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1600px;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1348px;
+    /* justify-content: end;
+    align-items: end; */
+    list-style: none;
+}
+
+.navbar__links li {
+    margin-left: 3;
+    margin-right: 3%;
+    font-size: 19px;
+    margin-top: 6px;
+
+
+}
+
+.logo-site {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 140px;
+    width: 25%;
+    margin-top: 10px;
+    list-style: none;
+    text-align: center;
+
+}
+
+.conteiner {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.container__pai {
+    display: flex;
+    flex-direction: row;
+    width: 615px;
+    height: 350px;
+    min-width: 280px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+
+.logo {
+    height: 850px;
+    background-image: url("https://dmarket.com/blog/best-csgo-wallpapers/CS-GO-wallpaper-HD-art_hue3ed7aeab8fceb3ccf3a35de14fc82fb_1114369_1920x1080_resize_q75_lanczos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 50%; */
+    margin: auto;
+    min-width: 280px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.container__texto {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto__home {
+    color: white;
+    font-size: 45px;
+    margin-left: 36%;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.container__pai {
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: 300px;
+}
+.barra {
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+a:hover .barra {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.imagem1 {
+    display: flex;
+    flex-direction: row;
+    width: 830px;
+    height: 300px;
+    background-image: url("https://files.tecnoblog.net/wp-content/uploads/2019/07/Counter-Strike-1.6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 1920px;
+    align-items: center;
+
+}
+
+.logo2 {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    font-size: 22px;
+}
+
+.imagem2 {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 300px;
+    background: url("http://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.logo3 {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    font-size: 22px;
+}
+
+ul a {
+    text-decoration: none;
+
+    color: rgb(0, 0, 0);
+}
+
+.cor {
+    color: white;
+    text-decoration: none;
+    margin-left: 64px;
+}
+
+.rodape {
+    height: 150px;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.fotosrodape {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.escritarodape h5 img {
+    margin-top: 5px;
+}
+
+.escrita p {
+    color: white;
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-right: 350px;
+
+
+}
+
+.mobilenavbar {
+    display: none;
+    cursor: pointer;
+}
+
+.mobilenavbar div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    margin-right: 500px;
+    transition: 0.3s;
+
+}
+
+@media(max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar__links {
+
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+}
+
+.navbar__links li {
+    margin-left: 0;
+    opacity: 0;
+}
+
+.mobilenavbar {
+    display: block;
+}
+
+.navbar__links.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobilenavbar.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobilenavbar.active .line2 {
+    opacity: 0;
+}
+
+.mobilenavbar.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
