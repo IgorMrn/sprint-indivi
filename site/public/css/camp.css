@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Century Gothic;
+    background-color: rgb(0, 0, 0);
+}
+
+------------------------- .header {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1600px;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1348px;
+    /* justify-content: end;
+    align-items: end; */
+    list-style: none;
+}
+
+.navbar__links li {
+    margin-left: 3;
+    margin-right: 3%;
+    font-size: 19px;
+    margin-top: 6px;
+    color: white;
+
+
+}
+.navbar__links a{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.logo-site {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 140px;
+    width: 25%;
+    margin-top: 10px;
+    list-style: none;
+    text-align: center;
+    color: white;
+
+}
+
+.conteiner {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+
+.container__pai {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    min-width: 280px;
+    max-width: 1920px;
+    width: 70%;
+    /* background-color: pink; */
+    margin-left: 24%;
+}
+
+
+.texto__home {
+    color: white;
+    font-size: 25px;
+    margin-left: 31%;
+    width: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.info_text{
+
+        color: #000000;
+        margin-bottom: 130vh;
+        text-align: center;
+        width: 100%;
+        /* display: flex;
+        justify-content: center;
+        flex-direction: row; */
+        margin-right: 240px;
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 5px;
+    
+
+}
+
+.info_text p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.container-artigo {
+    width: 90%;
+    max-width: 620px;
+    margin-left: 37px;
+}
+
+.imagem1  img{
+    display: flex;
+    width: 620px;
+    height: 270px;
+    min-width: 280px;
+    max-width: 1920px;
+    /* margin-bottom: 15px;  */
+
+}
+

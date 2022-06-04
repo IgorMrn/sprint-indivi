@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: Century Gothic;
+    background-color: rgb(0, 0, 0);
+}
+.header {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1600px;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1348px;
+    /* justify-content: end;
+    align-items: end; */
+    list-style: none;
+}
+
+.navbar__links li {
+  margin-left: 3;
+  margin-right: 3%;
+  font-size: 19px;
+  margin-top: 6px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+    
+    
+
+
+}
+
+.navbar__links a{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    font-size: 19px;
+}
+.conteiner {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.container__pai {
+    display: flex;
+    flex-direction: row;
+    width: 615px;
+    height: 350px;
+    min-width: 280px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.logo-site  {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 140px;
+    margin-top: 7px;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* .container {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
+  
+  
+  
+  .header a {
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    align-self: flex-start;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+ 
+  /* F.A.Q. */
+  
+  .faq {
+    width: 100%;
+  }
+  
+  .faq h1 {
+    text-align: center;
+  }
+  
+  .faq-list {
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+  }
+  
+  .faq-question,
+  .faq-answer {
+    background: #303030;
+  }
+  
+  .faq-question {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+  }
+  
+  .faq-question::after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/fechar.svg") no-repeat center center;
+    transform: rotate(45deg);
+  }
+  
+  .faq-question.active::after {
+    transform: rotate(0deg);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  
+  .faq-answer > div {
+    padding: 30px;
+  }
+  
+  .faq-answer.active {
+    max-height: 1200px;
+  }
+  
+  /* Footer */
+  
+  .footer .form-cta {
+    margin-top: 0;
+  }
+  
+  .footer {
+    padding: 4rem 0 2rem 0;
+    border-top: 8px solid #222;
+    background: black;
+    display: grid;
+    justify-items: center;
+  }
+  
+  .footer p {
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+  }
+  
+  /* Responsivo */
+  
+  @media (max-width: 800px) {
+    .header {
+      padding: 0 15px;
+    }
+  
+    .header img {
+      max-width: 90px;
+    }
+  
+    .header a {
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  
+    .main {
+      height: 500px;
+    }
+  
+    .main h1 {
+      font-size: 28px;
+    }
+  
+    .main span,
+    .main p {
+      width: 80vw;
+    }
+  
+    .main span {
+      margin-top: 16px;
+      font-size: 18px;
+    }
+  
+    .main p {
+      margin-top: 10px;
+    }
+  
+    .form-cta {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 10px;
+      max-width: 80vw;
+    }
+  
+    .form-cta input {
+      font-size: 16px;
+      padding: 13px;
+    }
+  
+    .form-cta button {
+      font-size: 16px;
+      justify-self: center;
+      padding: 4px 16px 8px 16px;
+      border-radius: 2px;
+    }
+  
+    .form-cta button::after {
+      margin-left: 5px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 6px 12px;
+    }
+  
+    section h1,
+    .section p {
+      text-align: center;
+    }
+  
+    section h1 {
+      font-size: 26px;
+    }
+  
+    .section p {
+      font-size: 18px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .faq-list {
+      margin-top: 22px;
+    }
+  
+    .faq-question,
+    .faq-answer {
+      font-size: 18px;
+    }
+  
+    .faq-question {
+      padding: 16px 22px;
+    }
+  
+    .faq-question::after {
+      background-size: 15px;
+    }
+  
+    .faq-answer > div {
+      padding: 21px;
+    }
+  }
+  
