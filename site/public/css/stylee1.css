@@ -11,8 +11,8 @@ body {
   
 }
 header{
-    height: 850px;
-    background-image: url("https://wallpaperaccess.com/full/4918071.jpg");
+    height: 200vh;
+   background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
