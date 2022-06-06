@@ -34,11 +34,11 @@
             <a onclick="camp1()" href="#">
                 <div class="card card0">
                     <div class="border">
-                        <h2>Campeonato 1</h2>
+                        <h2>Astralis</h2>
                         <div class="texto">
-                            <span class="c">Campeonato</span>
+                            <!-- <span class="c">Campeonato</span>
                             <span class="c">Teste 2008</span>
-                            <span class="c">Saiba mais</span>
+                            <span class="c">Saiba mais</span> -->
                         </div>
                     </div>
                 </div>
@@ -46,11 +46,11 @@
 <a onclick="camp2()" href="#">
             <div class="card card1">
                 <div class="border">
-                    <h2>Campeonato 2</h2>
+                    <h2>Ence</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2004</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -58,11 +58,11 @@
 <a onclick="camp3()" href="#">
             <div class="card card2">
                 <div class="border">
-                    <h2>Campeonato 3</h2>
+                    <h2>Furia</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -70,11 +70,11 @@
         <a onclick="camp4()" href="#">
             <div class="card card3">
                 <div class="border">
-                    <h2>Campeonato 4</h2>
+                    <h2>Mibr</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -82,11 +82,11 @@
         <a onclick="camp5()" href="#">
             <div class="card card4">
                 <div class="border">
-                    <h2>Campeonato 5</h2>
+                    <h2>Pain Gaming</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -94,11 +94,11 @@
         <a onclick="camp6()" href="#">
             <div class="card card5">
                 <div class="border">
-                    <h2>Campeonato 6</h2>
+                    <h2>G3x</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -110,11 +110,11 @@
         <a onclick="camp7()" href="#">
             <div class="card card6">
                 <div class="border">
-                    <h2>Campeonato 6</h2>
+                    <h2>Fnatic</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -126,11 +126,11 @@
         <a onclick="camp8()" href="#">
             <div class="card card7">
                 <div class="border">
-                    <h2>Campeonato 6</h2>
+                    <h2>Navi</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -143,11 +143,11 @@
         <a onclick="camp9()" href="#">
             <div class="card card8">
                 <div class="border">
-                    <h2>Campeonato 6</h2>
+                    <h2>Lg Gaming</h2>
                     <div class="texto">
-                        <span class="c">Campeonato</span>
+                        <!-- <span class="c">Campeonato</span>
                         <span class="c">Teste 2006</span>
-                        <span class="c">Saiba mais</span>
+                        <span class="c">Saiba mais</span> -->
                     </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@ function camp1(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -210,7 +210,7 @@ function camp2(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -233,7 +233,7 @@ function camp2(){
 
 function camp3(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTime = 3;
+    var fkTimes = 3;
 
     fetch("/medidas/tempo-real", {
             method: "POST",
@@ -241,7 +241,7 @@ function camp3(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -264,7 +264,7 @@ function camp3(){
 
 function camp4(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTime = 4;
+    var fkTimes = 4;
 
     fetch("/medidas/tempo-real", {
             method: "POST",
@@ -272,7 +272,7 @@ function camp4(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -303,7 +303,7 @@ function camp5(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -334,7 +334,7 @@ function camp6(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -364,7 +364,7 @@ function camp7(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -394,7 +394,7 @@ function camp8(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -425,7 +425,7 @@ function camp9(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                fkTimes,
+                fkTimes:fkTimes,
                 fkUser:idUsuario            
                 
             })
@@ -472,16 +472,16 @@ function camp9(){
       'Ence',
       'Furia',
       'Mibr',
-      'G3x',
-      'Heroic',
-      'Navi',
       'Pain Gaming',
+      'G3x',
+      'Fnatic',
+      'Navi',
       'Cloud9'], // labels (rótulos) que serão identificados os nossos dados 
                     datasets: [ // datasets (conjunto de dados)
                         {
                             label: "Times favoritos dos usuários!", // irá conter o rótulo principal do nosso gráfico
                             data: nomeTimes, // os dados referentes aqueles rótulos
-                            backgroundColor: ['rgb(255, 99, 132)','rgb(255, 255, 0)','rgb(0,0,0)','rgb(65,105,225)','rgb(0,0,139)','rgb(211,211,211)','rgb(238,173,45)','rgb(128,128,128)','rgb(135,206,250)'], // cor das "bolinhas" do gráfico
+                            backgroundColor: ['rgb(255, 99, 132)','rgb(255, 255, 0)','rgb(0,0,139)','rgb(65,105,225)','rgb(0,0,0)','rgb(211,211,211)','rgb(255,117,24)','rgb(255,191,0)','rgb(135,206,250)'], // cor das "bolinhas" do gráfico
                             borderColor: "black", // cor da "linha" do gráfico
                             hoverBackgroundColor: "rgb(115, 59, 48)",
                             fontWeight: "bold"
