@@ -14,10 +14,10 @@ function buscarUltimasMedidas(id, limite_linhas, idTimes) {
   }
   
   function atualizarMedida(fkTimes, fkUser) {
-    instrucaoSql = `  insert into likes(fkTimes,likes) values
+    instrucaoSql = `  update  
                       likes
                       set likes = likes + 1
-                      where fkTimes =  ${fkTimes} and fkUser = ${fkUser};
+                      where fkTimes =  ${fkTimes};
                   `;
   
     console.log(`Executando a instrução SQL: \n${instrucaoSql}`);
