@@ -31,7 +31,7 @@
                     </a> </li>
         </div>
         <div class="conteneier">
-            <a onclick="camp1()" href="campeonato1..html">
+            <a onclick="camp1()" href="#">
                 <div class="card card0">
                     <div class="border">
                         <h2>Campeonato 1</h2>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </a>
-<a onclick="camp2()" href="camp2.html">
+<a onclick="camp2()" href="#">
             <div class="card card1">
                 <div class="border">
                     <h2>Campeonato 2</h2>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </a>
-<a onclick="camp3()" href="camp3.html">
+<a onclick="camp3()" href="#">
             <div class="card card2">
                 <div class="border">
                     <h2>Campeonato 3</h2>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </a>
-        <a onclick="camp4()" href="camp4.html">
+        <a onclick="camp4()" href="#">
             <div class="card card3">
                 <div class="border">
                     <h2>Campeonato 4</h2>
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </a>
-        <a onclick="camp5()" href="camp5.html">
+        <a onclick="camp5()" href="#">
             <div class="card card4">
                 <div class="border">
                     <h2>Campeonato 5</h2>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </a>
-        <a onclick="camp6()" href="camp6.html">
+        <a onclick="camp6()" href="#">
             <div class="card card5">
                 <div class="border">
                     <h2>Campeonato 6</h2>
@@ -107,7 +107,7 @@
 
 
         
-        <a onclick="camp7()" href="camp6.html">
+        <a onclick="camp7()" href="#">
             <div class="card card6">
                 <div class="border">
                     <h2>Campeonato 6</h2>
@@ -123,7 +123,7 @@
 
 
 
-        <a onclick="camp8()" href="camp6.html">
+        <a onclick="camp8()" href="#">
             <div class="card card7">
                 <div class="border">
                     <h2>Campeonato 6</h2>
@@ -140,7 +140,7 @@
 
 
 
-        <a onclick="camp9()" href="camp6.html">
+        <a onclick="camp9()" href="#">
             <div class="card card8">
                 <div class="border">
                     <h2>Campeonato 6</h2>
@@ -158,7 +158,7 @@
         <div class="graph">
             <span><h1>Times favoritos dos usuarios</h1></span>
             <div>
-                <canvas id="myChart"></canvas>
+                <canvas id="visitados"></canvas>
               </div>
             
         </div>
@@ -172,56 +172,303 @@
 <script>
 function camp1(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 1;
+    var fkTimes = 1;
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Vapormax resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
     
 
 }
 
 function camp2(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 2;
+    var fkTimes = 2;
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp3(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 3;
+    var fkTime = 3;
+
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp4(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 4;
+    var fkTime = 4;
+
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp5(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 5;
+    var fkTimes = 5;
+
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp6(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 6;
+    var fkTimes = 6;
+
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp7(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 7;
+    var fkTimes = 7;
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp8(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 8;
+    var fkTimes = 8;
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 function camp9(){
     var idUsuario = sessionStorage.ID_USUARIO;
-    var fkTenis = 9;
+    var fkTimes = 9;
+
+    fetch("/medidas/tempo-real", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                fkTimes,
+                fkUser:idUsuario            
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Air Max 95 resgatado com sucesso!");                
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+    
 }
 
 
 </script>
 <script>
-    const labels = [
-      'Astralis',
+  var nomeTimes = []
+  fetch("/analytics/analytics")
+    .then(function (res) {
+        console.log(res)
+        res.json().then(function (json) {
+            console.log(json);
+            var likes = []
+            for (let index = 0; index < json.length; index++) {
+                nomeTimes.push(json[index].Votos);
+                
+                // votos.push(json[index].likes)
+            }
+
+            console.log(nomeTimes);
+
+            // Inicia uma variável do tipo constante (não pode ser reatribuida)
+            const visitados = {
+                type: "bar", // tipo do gráfico
+                data: { // objeto que vai conter os dados do gráfico
+                    labels: ['Astralis',
       'Ence',
       'Furia',
       'Mibr',
@@ -229,29 +476,39 @@ function camp9(){
       'Heroic',
       'Navi',
       'Pain Gaming',
-      'Cloud9'
+      'Cloud9'], // labels (rótulos) que serão identificados os nossos dados 
+                    datasets: [ // datasets (conjunto de dados)
+                        {
+                            label: "Times favoritos dos usuários!", // irá conter o rótulo principal do nosso gráfico
+                            data: nomeTimes, // os dados referentes aqueles rótulos
+                            backgroundColor: ['rgb(255, 99, 132)','rgb(255, 255, 0)','rgb(0,0,0)','rgb(65,105,225)','rgb(0,0,139)','rgb(211,211,211)','rgb(238,173,45)','rgb(128,128,128)','rgb(135,206,250)'], // cor das "bolinhas" do gráfico
+                            borderColor: "black", // cor da "linha" do gráfico
+                            hoverBackgroundColor: "rgb(115, 59, 48)",
+                            fontWeight: "bold"
+                        }
+                    ]
+                },
+                options: {
+                    maintainAspectRatio: false
+                    /* maintainAspectRatio (manter relação de aspecto) 
+                      caso true: ele "obdece" a altura e largura que colocamos
+                      caso false: ele não "obdece" a altura e largura que colocamos e se ajusta ao componente pai
+                    */
+                }
+            }
 
-    ];
-  
-    const data = {
-      labels: labels,
-      datasets: [{
-        label: 'My First dataset',
-        backgroundColor: ['rgb(255, 99, 132)','rgb(255, 255, 0)','rgb(0,0,0)','rgb(65,105,225)','rgb(0,0,139)','rgb(211,211,211)','rgb(238,173,45)','rgb(128,128,128)','rgb(135,206,250)'],
+            var mais_visitados = new Chart(document.getElementById ("visitados"), visitados);
+            /* aqui obrigatoriamente tem que colocar new Chart() para criar um novo chart 
+            e passar dentro dos (parênteses) o elemento canvas que você quer mandar e 
+            separado pela virgula o que você quer mandar, no nosso caso a config que fizemos 
+            */
 
-        data: [1, 10, 5, 2, 20, 30, 45,10,10],
-      }]
-    };
-  
-    const config = {
-      type: 'doughnut',
-      data: data,
-      options: {}
-    };
-  </script>
- <script>
-    const myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-    );
+
+
+
+
+        })
+    }).catch(function (erro) {
+        console.log(erro);
+    })
   </script>  
